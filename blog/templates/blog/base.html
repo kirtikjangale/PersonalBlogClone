@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+   <!DOCTYPE html>
 {% load static %}
 <html lang="en" dir="ltr">
   <head>
@@ -39,8 +39,8 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-
-            <a class="nav-item nav-link" href="https://www.github.com">Github</a>
+            <a class="nav-item nav-link" href="{% url 'about' %}">About</a>
+            <a class="nav-item nav-link" href="https://github.com/kirtikjangale">Github</a>
             <a class="nav-item nav-link" href="https://www.linkedin.com">Linkedin</a>
 
           </div>
@@ -72,7 +72,7 @@
 
           {% else %}
 
-          <li> <a class="nav navbar-right" href="{% url 'login' %}"> <span class="glyphicon glyphicon-user"></span> </a> </li>
+          <li> <a class="nav navbar-right" href="{% url 'login' %}"> <span class="glyphicon glyphicon-user">Login</span> </a> </li>
 
           {% endif %}
 
